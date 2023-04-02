@@ -31,7 +31,7 @@ body {
 .sun {
   height: calc(var(--planet-size) * 1.5vw);
   width: calc(var(--planet-size) * 1.5vw);
-  background-color: white;
+  background-image: url("./images/sun.jpg");
   box-shadow: 0 0 20px 0 #FFFFEF;
   border-radius: 50%;
 }
@@ -50,7 +50,14 @@ body {
   width: 100%;
 }
 
-/* PLANT PSUEDO-ELEMENTS */
+.planet-container div::after, .sun {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: contain;
+}
+
+/* PLANET PSUEDO-ELEMENTS */
 .planet-container div::after {
   content: '';
   position: absolute;
@@ -60,10 +67,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 3px 0 #FFFFEF;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  object-fit: contain;
 }
 
 .planet-container--mercury {
