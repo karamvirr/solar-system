@@ -57,7 +57,7 @@ body {
   object-fit: contain;
 }
 
-/* PLANET PSUEDO-ELEMENTS */
+/* PLANET PSEUDO-ELEMENTS */
 .planet-container div::after {
   content: '';
   position: absolute;
@@ -70,8 +70,8 @@ body {
 }
 
 .planet-container--mercury {
-  width: 15vw;
-  height: 15vw;
+  width: min(15vw, 25vh);
+  height: min(15vw, 25vh);
 }
 
 .mercury {
@@ -83,8 +83,8 @@ body {
 }
 
 .planet-container--venus {
-  width: 20vw;
-  height: 20vw;
+  width: min(20vw, 35vh);
+  height: min(20vw, 35vh);
 }
 
 .venus {
@@ -96,8 +96,8 @@ body {
 }
 
 .planet-container--earth {
-  width: 25vw;
-  height: 25vw;
+  width: min(25vw, 45vh);
+  height: min(25vw, 45vh);
 }
 
 .earth {
@@ -109,8 +109,8 @@ body {
 }
 
 .planet-container--mars {
-  width: 30vw;
-  height: 30vw;
+  width: min(30vw, 55vh);
+  height: min(30vw, 55vh);
 }
 
 .mars {
@@ -122,8 +122,8 @@ body {
 }
 
 .planet-container--jupiter {
-  width: 35vw;
-  height: 35vw;
+  width: min(35vw, 65vh);
+  height: min(35vw, 65vh);
 }
 
 .jupiter {
@@ -135,8 +135,8 @@ body {
 }
 
 .planet-container--saturn {
-  width: 40vw;
-  height: 40vw;
+  width: min(40vw, 75vh);
+  height: min(40vw, 75vh);
 }
 
 .saturn {
@@ -148,8 +148,8 @@ body {
 }
 
 .planet-container--uranus {
-  width: 45vw;
-  height: 45vw;
+  width: min(45vw, 85vh);
+  height: min(45vw, 85vh);
 }
 
 .uranus {
@@ -161,8 +161,8 @@ body {
 }
 
 .planet-container--neptune {
-  width: 50vw;
-  height: 50vw;
+  width: min(50vw, 95vh);
+  height: min(50vw, 95vh);
 }
 
 .neptune {
